@@ -23,19 +23,19 @@
     bin/run-env.sh
     ```
     
-3. Build project web server (inside docker image) NOTE: You won't be able to `cd` here yet because the project directory does not exist. If you were able to launch the above commands you should now be inside the docker image. You can exit it with CTRL+D now.
+3. Build project web server (inside docker image) NOTE: You won't be able to `cd` here yet because the DeliverySystem directory does not exist. If you were able to launch the above commands you should now be inside the docker image. You can exit it with CTRL+D now.
 
     ```bash
     # Inside docker image
-    cd /home/user/repo/project
+    cd /home/user/repo/DeliverySystem
     make
     ```
     
 4. Run web server (inside docker image)
 
     ```bash
-    # MUST be within project/ directory inside docker image
-    cd /home/user/repo/project
+    # MUST be within DeliverySystem/ directory inside docker image
+    cd /home/user/repo/DeliverySystem
     ./bin/run.sh
     ```
     
@@ -54,7 +54,7 @@
 2. Build and run the simulation
 
     ```bash
-    cd /path/to/project
+    cd /path/to/DeliverySystem
     make -j
     ./bin/run.sh
     ```
@@ -69,11 +69,11 @@
 
     ```bash
     cd /path/to/cloned/repository
-    cd project
+    cd DeliverySystem
     make
     ```
     
- 2. Run project
+ 2. Run DeliverySystem
 
     ```bash
     # MUST be within project/ directory
